@@ -2,17 +2,15 @@ import java.util.Scanner;
 
 public class Main {
 
-    final static String EXIT_COMMAND = "Exit";
+    static final String EXIT_COMMAND = "Exit";
 
 
     public static void main(String[] args) {
 
-
+        Scanner scanner = new Scanner(System.in);
         while (true) {
 
             System.out.println("Enter your letter:\n");
-
-            Scanner scanner = new Scanner(System.in);
             String letter = scanner.nextLine();
 
             if (letter.isBlank()) {
