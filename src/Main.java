@@ -7,6 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Integer a = 1;
+
         while (true) {
 
             System.out.println("Enter your letter:\n");
@@ -22,7 +24,7 @@ public class Main {
                 break;
             }
 
-                String revertedLetter = revertLetter(letter);
+            String revertedLetter = revertLetter(letter);
             System.out.println(revertedLetter);
         }
     }
@@ -35,32 +37,22 @@ public class Main {
 
         while (left < right) {
 
-            if ((Character.isLetter(array[left])) && (!Character.isLetter(array[right]))) {
 
-                do {
-                    right--;
-                }
-                while (!Character.isLetter(array[right]));
+            if (!Character.isLetter(array[left])) {
 
-            } else if ((!Character.isLetter(array[left])) && (Character.isLetter(array[right]))) {
+                left++;
 
-                do {
-                    left++;
-                }
-                while (!Character.isLetter(array[left]));
+            } else if (!Character.isLetter(array[right])) {
 
-            }
+                right--;
 
-            if ((Character.isLetter(array[left])) && (Character.isLetter(array[right]))) {
+            } else {
                 char temp = array[left];
                 array[left] = array[right];
                 array[right] = temp;
+                left++;
+                right--;
             }
-
-            left++;
-            right--;
-
-
         }
         return new String(array);
     }
