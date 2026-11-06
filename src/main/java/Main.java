@@ -28,6 +28,10 @@ public class Main {
 
     public static String revertLetter(String letter) {
 
+        if (letter == null) {
+            throw new IllegalArgumentException("String should not be null!\n");
+        }
+
         char[] array = letter.toCharArray();
         int left = 0;
         int right = array.length - 1;
