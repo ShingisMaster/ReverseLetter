@@ -1,6 +1,6 @@
 ### IntelliJ IDEA ###
 out/
-taget/
+target/
 .idea/
 *.iml
 !**/src/main/**/out/
