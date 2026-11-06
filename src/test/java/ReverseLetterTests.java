@@ -10,7 +10,7 @@ public class ReverseLetterTests
         String letter = "J@va the be$t!123";
         String expected = "t@eb eht av$J!123";
         String actual = Main.revertLetter(letter);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -18,7 +18,7 @@ public class ReverseLetterTests
         String letter = "";
         String expected = "";
         String actual = Main.revertLetter(letter);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -26,7 +26,7 @@ public class ReverseLetterTests
         String letter = "a";
         String expected = "a";
         String actual = Main.revertLetter(letter);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -34,7 +34,7 @@ public class ReverseLetterTests
         String letter = "#1234567@";
         String expected = "#1234567@";
         String actual = Main.revertLetter(letter);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -42,7 +42,7 @@ public class ReverseLetterTests
         String letter = "abcdefg";
         String expected = "gfedcba";
         String actual = Main.revertLetter(letter);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
 
@@ -51,7 +51,7 @@ public class ReverseLetterTests
         String letter = "@ ab # cde $ fg *";
         String expected = "@ gf # edc $ ba *";
         String actual = Main.revertLetter(letter);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -59,7 +59,7 @@ public class ReverseLetterTests
         String letter = "@Ac00Ba%*";
         String expected = "@aB00cA%*";
         String actual = Main.revertLetter(letter);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
